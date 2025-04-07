@@ -1,5 +1,3 @@
-# rag-guardrails-bank
-
 ## Overview
 
 This document provides comprehensive documentation for the AI Bank Solution implemented using Spring AI. The solution integrates three key components:
