@@ -255,7 +255,8 @@ The implementation includes several resilience patterns:
 
 ### Prerequisites
 
-- Java 17 or higher
+- Java 21 or higher
+- Spring AI 1.0.0-M6
 - Maven 3.8 or higher
 - PostgreSQL 14 or higher with pgvector extension
 - Redis 6 or higher

@@ -2,7 +2,7 @@ package com.example.aibank.agentic_guardrails.service;
 
 import com.example.aibank.agentic_guardrails.model.ComplianceRule;
 import com.example.aibank.agentic_guardrails.repository.ComplianceRuleRepository;
-import lombok.RequiredArgsConstructor;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.messages.Message;
@@ -166,6 +166,7 @@ public class ComplianceGuardrailService {
     /**
      * Result of compliance validation
      */
+    @Getter
     public static class ValidationResult {
         private final boolean compliant;
         private final List<String> violations;
@@ -176,17 +177,6 @@ public class ComplianceGuardrailService {
             this.violations = violations;
             this.explanation = explanation;
         }
-        
-        public boolean isCompliant() {
-            return compliant;
-        }
-        
-        public List<String> getViolations() {
-            return violations;
-        }
-        
-        public String getExplanation() {
-            return explanation;
-        }
+
     }
 }
